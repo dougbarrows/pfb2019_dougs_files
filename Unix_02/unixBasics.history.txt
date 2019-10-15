@@ -1,0 +1,363 @@
+    1  curl -O https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/cuffdiff.txt
+    2  ls
+    3  more cuffdiff.txt 
+    4  grep Chr7 cuffdiff.txt > fav_chr_cuffdiff.txt 
+    6  grep Chr9 cuffdiff.txt >> fav_chr_cuffdiff.txt 
+    7  tail fav
+   
+
+
+ 8  tail fav_chr_cuffdiff.txt 
+    9  head fav_chr_cuffdiff.txt 
+   10  cat blablabla.txt
+   11  cat blablabla.txt 2> errors.txt
+   12  cat errors.txt
+   13  cat blablabla.txt > errors.txt
+   14  cat blablabla.txt 1> errors.txt
+
+ 8  tail fav_chr_cuffdiff.txt 
+    9  head fav_chr_cuffdiff.txt 
+   10  cat blablabla.txt
+   11  cat blablabla.txt 2> errors.txt
+   12  cat errors.txt
+   13  cat blablabla.txt > errors.txt
+   14  cat blablabla.txt 1> errors.txt
+   15  cat fav_chr_cuffdiff.txt blalalf.txt
+   16  cat fav_chr_cuffdiff.txt blalalf.txt 1> out.txt 2> err.txt
+   17  cat out.txt
+   18  cat err.txt
+   19  cd ~
+   20  pwd
+   21  ls
+   22  mkdir problemsets
+   23  cd problemsets/
+   24  wget  https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/sequences.nt.fa
+   25  head sequences.nt.fa 
+   26  wc -l sequences.nt.fa 
+   27  wc -c sequences.nt.fa 
+   28  man head
+   29  head 1 sequences.nt.fa 
+   30  man head
+   31  head -n 1 sequences.nt.fa 
+   32  tail -n 3 sequences.nt.fa 
+   33  man grep
+   34  grep > sequences.nt.fa > wc -l
+   35  grep '>' sequences.nt.fa > wc -l
+   36  grep '>' sequences.nt.fa 1> wc -l
+   37  grep '>' sequences.nt.fa > head
+   38  man grep
+   39  grep 'Homo' sequences.nt.fa > head
+   40  grep '>' sequences.nt.fa | wc -l
+   41  grep 'Homo' sequences.nt.fa | wc -l
+   42  grep >  sequences.nt.fa | wc -l
+   43  grep '>'  sequences.nt.fa | wc -l
+   44  man grep
+   45  grep '>'  sequences.nt.fa > test.txt
+   46  head test.txt 
+   47  cat test.txt 
+   48  man grep
+   49  grep -c '^>'  sequences.nt.fa > test.txt
+   50  head test.txt 
+   51  grep -c '^>'  sequences.nt.fa > wc -l
+   52  grep -c '^>'  sequences.nt.fa | wc -l
+   53  more sequences.nt.fa 
+   54  cat sequences.nt.fa 
+   55   https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/sequences.nt.fa
+   56  cat sequences.nt.fa 
+   57  head sequences.nt.fa 
+   58  wget https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/sequences.nt.fa
+   59  head sequences.nt.fa
+   60  head sequences.nt.fa.1
+   61  grep -c '^>'  sequences.nt.fa | wc -l
+   62  grep -c '^>'  sequences.nt.fa.1 | wc -l
+   63  grep '>'  sequences.nt.fa.1 | wc -l
+   64  more sequences.nt.fa
+   
+
+   62  grep -c '^>'  sequences.nt.fa.1 | wc -l
+   63  grep '>'  sequences.nt.fa.1 | wc -l
+   64  more sequences.nt.fa
+   65  more sequences.nt.fa.1
+   66        
+   67  grep '>'  sequences.nt.fa.1 | wc -l
+   68  grep -c '^>'  sequences.nt.fa.1 | wc -l
+   69  man grep
+
+65  more sequences.nt.fa.1
+   66        
+   67  grep '>'  sequences.nt.fa.1 | wc -l
+   68  grep -c '^>'  sequences.nt.fa.1 | wc -l
+   69  man grep
+   70  mc sequences.nt.fa.1 cancer_genes.fasta
+   71  mv sequences.nt.fa.1 cancer_genes.fasta
+   72  wget https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/cuffdiff.txt
+   73  tail -n 3 cuffdiff.txt 
+   74  man sort
+   75  head cuffdiff.txt 
+   76  sort -k 10 cuffdiff.txt > sorted.cuffdiff.out
+   77  head sorted.cuffdiff.out 
+   78  tail sorted.cuffdiff.out 
+   79  man sort
+   80  sort -k 10 -r cuffdiff.txt > sorted.cuffdiff.out
+   81  head sorted.cuffdiff.out 
+   82  tail sorted.cuffdiff.out 
+   83  man cut
+   84  sort -k 10 -r cuffdiff.txt > head -n 100 > top100.sorted.cuffdiff.out
+   85  sort -k 10 -r cuffdiff.txt | head -n 100 > top100.sorted.cuffdiff.out
+   86  wc -l top100.sorted.cuffdiff.out 
+   87  man cut
+   88  cut -d "\t" -f 1 | head
+   89  cut -d \t -f 1 | head
+   90  cut -d \t -f 1 | head
+   91  cut -d \t -f 1 
+   92  cut -d "/t" -f 1 | head
+   93* cut -d "	" -f 1 | head -n 100 > 
+   94  cut -d "	" -f 1 cuffdiff.txt | head
+   95  sort -k 10 -r cuffdiff.txt | head -n 100 > cut -d " " -f 1 > differentially.expressed.genes.txt
+   96  sort -k 10 -r cuffdiff.txt | head -n 100 | cut -d " " -f 1 > differentially.expressed.genes.txt
+   97  head differentially.expressed.genes.txt 
+   98  sort -k 10 -r cuffdiff.txt | head -n 100 | cut -d " " -f 1 
+   99  cut -d "	" -f 1 cuffdiff.txt | head
+  100* sort -k 10 -r cuffdiff.txt
+  101  sort -k 10 -r cuffdiff.txt |  cut -d " " -f 1 
+  102  cut -d "\t" -f 1 top100.sorted.cuffdiff.out | head
+  103  cut -d "	" -f 1 top100.sorted.cuffdiff.out | head
+  104  sort -k 10 -r cuffdiff.txt | head -n 100 | cut -d " " -f 1 . > differentially.expressed.genes.txt
+  105  cut -d "	" -f 1 cuffdiff.txt | head
+  106  head cuffdiff.txt 
+  107  head top100.sorted.cuffdiff.out 
+  108  sort -k 10 -r cuffdiff.txt | head -n 100 
+  109  sort -k 10 -r cuffdiff.txt | head -n 100 > top100.sorted.cuffdiff.out 
+  110  cut -d "	" -f 1 top100.sorted.cuffdiff.out | head
+  111  sort -k 10 -r cuffdiff.txt | head -n 100 | cut -d " " -f 1 | head
+  112  sort -k 10 -r cuffdiff.txt | head -n 100 
+  113  sort -k 10 -r cuffdiff.txt | head -n 100 > test.txt
+  114  cut -d "	" -f 1 test.txt | head
+  115  sort -k 10 -r cuffdiff.txt | head -n 100 | cut -d " " -f 1 | head
+  116  sort -k 10 -r cuffdiff.txt | head -n 100 | cut  -f 1 | head
+  117  od -c test.txt 
+  118  od -c test.txt | less
+  119  more sequences.nt.fa.1
+  120  more sequences.nt.fa
+  121  ls
+  122  more canc
+  123  more cancer_genes.fasta 
+  124  grep '>' cancer_genes.fasta > wc -l
+  125  grep '>' cancer_genes.fasta | wc -l
+  126  grep '^>' cancer_genes.fasta | wc -l
+  127  grep -c '^>' cancer_genes.fasta | wc -l
+  128  man grep
+  129  cd ~
+  130  git clone https://github.com/dougbarrows/pfb2019_problemsets.git
+  131  ls
+  132  cd pfb
+  133  cd pfb2019_problemsets/
+  134  echo "This is a new file" > newFile.txt
+  135  git init
+  136  git status
+  137  git add newFile.txt 
+  138  git commit -m "first commit new file"
+  139  git remote add origin https://github.com/dougbarrows/pfb2019_problemsets.git
+  140  git remote -v
+  141  git push origin master
+  142  git push -u origin master
+  143  cd ~
+  144  git clone https://github.com/prog4biol/pfb2019.git
+  145  ls
+  146  cd pfb2019
+  147  git status
+  148  git init
+  149  ls
+  150  git clone https://github.com/prog4biol/pfb2019.git
+  151  git status
+  152  ls
+  153  cd pfb2019/
+  154  ls
+  155  cd ..
+  156  ls
+  157  cd ..
+  158  ls
+  159  cd problemsets/
+  160  ls
+  161  cat cut
+  162  rm cut wc 
+  163  ls
+  164  rm head
+  165  ls
+  166  mkdir Unix_01
+  167  mv ./*.txt ./Unix_01/
+  168  ls
+  169  cd Unix_01/
+  170  ls
+  171  cd ..
+  172  ls
+  173  mv *.out ./Unix_01/
+  174  ls
+  175  mv cancer_genes.fasta sequences.nt.fa ./Unix_01/
+  176  ls
+  177  mkdir Univ_02
+  178  ls
+  179  rm Univ_02/
+  180  mv Univ_02/ Unix_02
+  181  ls
+  182  git status
+  183  cd ..
+  184  cd problemsets/
+  185  git status
+  186  git init
+  187  cd ..
+  188  lsd
+  189  ls
+  190  cd ./problemsets/ ./pfb2019_problemsets/
+  191  cd ../pfb2019_problemsets/
+  192  ls
+  193  mv ./problemsets/ ./pfb2019_problemsets/
+  194  mv ./problemsets/* ./pfb2019_problemsets/
+  195  mv ../problemsets/* ./pfb2019_problemsets/
+  196  mv ../problemsets/ ./pfb2019_problemsets/
+  197  cd ../pfb2019_problemsets/
+  198  ls
+  199  cd pfb2019_problemsets/
+  200  ls
+  201  cd ../
+  202  git status
+  203  ls
+  204  mv ./pfb2019_problemsets/ .
+  205  mv ./pfb2019_problemsets pfb2019_problemsets_2
+  206  ls
+  207* mv 
+  208  mv ./pfb2019_problemsets_2/ .
+  209  mv ./pfb2019_problemsets_2/ ./
+  210  ls
+  211  cd pfb2019_problemsets_2/
+  212  ls
+  213  mv * ../
+  214  ls
+  215  cd ../
+  216  rm pfb2019_problemsets_2/
+  217  rmdir pfb2019_problemsets_2/
+  218  cd pfb2019_problemsets_2/
+  219  ls
+  220  ls -a
+  221  git rm *
+  222  git rm ./*
+  223  cd ../
+  224  ls
+  225  git status
+  226  ls -la
+  227  mv Unix_01 ../
+  228  cd ../
+  229  ls
+  230  cd pfb2019_problemsets/
+  231  cd pfb2019_problemsets_2/
+  232  cd ../
+  233  rm -rf pfb2019_problemsets_2/
+  234  ls
+  235  git init
+  236  git status
+  237  mv ../Unix_01/ ./
+  238  ls
+  239  git status
+  240  git add Unix_01
+  241  git status
+  242  git commit -m "moved problems from first session"
+  243  git push origin master
+  244  git push origin master
+  245  git add Unix_02
+  246  git commit -m "add second lecture folder"
+  247  git status
+  248  ls
+  249  git status
+  250  git push origin master
+  251  git add *
+  252  git status
+  253  git commit -m "add second lecture folder 2"
+  254  git status
+  255  ls
+  256  ls -a
+  257  cd Unix_02
+  258  ls -a
+  259  cd ..
+  260  mkdir Unix_02_2
+  261  ls
+  262  git status
+  263  rm .git
+  264  rm .git/
+  265  ls -a
+  266  rm -rf .git
+  267  git init
+  268  git status
+  269  git add -A
+  270  git status
+  271  ls
+  272  ls -A
+  273  rmdir Unix_02_2/
+  274  cd Unix_02
+  275  mkdir files
+  276  cp ../Unix_01/sequences.nt.fa ./
+  277  cp ../Unix_01/cancer_genes.fasta ./
+  278  ls
+  279  mv cancer_genes.fasta sequences.nt.fa ./files/
+  280  ls
+  281  cd files/
+  282  git status
+  283  cd ../
+  284  git status
+  285  cd ../
+  286  git status
+  287  git add Unix_02
+  288  git status
+  289  git add Unix_01/*
+  290  sit status
+  291  git status
+  292  git commit -m "unix01 and unix 02"
+  293  git push origin master
+  294  git remote -v
+  295  git remote add origin https://github.com/dougbarrows/pfb2019_problemsets.git
+  296  git status
+  297  touch test.txt
+  298  git status
+  299  git add -A
+  300  git status
+  301  git commit -m "test.txt
+"
+  302  git push -u origin master
+  303  cd Unix_02
+  304  vi mysequences.txt
+  305  git add mysequences.txt 
+  306  git commit -m "mysequences.txt add"
+  307  git push
+  308  mkdir fastas
+  309  cp files/cancer_genes.fasta fastas/
+  310  ls fastas/
+  311  rm files/cancer_genes.fasta 
+  312  git status
+  313  git add fastas/
+  314  git commit -m "fastas directory"
+  315  git push
+  316  vi oops
+  317  git status
+  318  bit add oops 
+  319  git add oops
+  320  git commit "oops"
+  321  git push
+  322  git rm oops
+  323  git commit -m "removing oops"
+  324  git push
+  325  vi oops2
+  326  git add oops2 
+  327  git commit -m "oops2"
+  328  git push
+  329  rm oops2 
+  330  git status
+  331  git add oops2
+  332  git commit -m "removing oop2"
+  333  git push
+  334  vi never
+  335  vi never
+  336  git add never
+  337  git status
+  338  git reset never
+  339  git status
+  340  man rm
+  341  history > unixBasics.history.txt
