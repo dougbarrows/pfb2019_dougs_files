@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-number = 32
+number = 50
 
 if number > 0:
 	print("positive")
