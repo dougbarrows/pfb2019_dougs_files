@@ -4,7 +4,7 @@ import sys
 
 number = int(sys.argv[1])
 
-print("your number is", number)
+pRint("your number is", number)
 if number > 0:
 	print("and it is positive")
 	if number < 50:
