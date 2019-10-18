@@ -16,7 +16,7 @@ with open("Python_06.seq.txt", "r") as fo:
 
 		reverse_comp = dna_complement[::-1]
 		compl[geneid] = reverse_comp
-		print(geneid, "| reverse_complement", reverse_comp)
+		print(">", geneid, "| reverse_complement", reverse_comp)
 
 
 
