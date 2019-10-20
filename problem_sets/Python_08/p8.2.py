@@ -64,5 +64,27 @@ with open (sys.argv[1], "r") as fo, open("Python_08.codons-all-frames_final.nt",
 		temp3 = key + "_frame3_codons"
 		output3 =  temp3 + "\n" + " ".join(frame3_codons)
 		all_frames_file.write(output3)
+	
+
+with open("Python_08.codons-all-frames_final.nt", "r") as fo, open("Python_08.codons-6frames.nt", "w") as rev_comp:
+	rev_comp_list = []
+	seq_name_list = []
+	for line in fo:
+		if re.search("codons", line):
+			seq_name = line
+		else:
+
+			dna_upper = line.upper()
+
+			dna_complement = dna_upper.replace("C", "c")
+			dna_complement = dna_complement.replace("T", "t")
+			dna_complement = dna_complement.replace("G", "C")
+			dna_complement = dna_complement.replace("c","G")
+			dna_complement = dna_complement.replace("A","T")
+			dna_complement = dna_complement.replace("t", "A")
+
+			reverse_comp = dna_complement[::-1]
 			
-	#all_frames_file.write(output1 + output2 + output3)
+			rev_comp_list.append(reverse_comp)
+		
+			rev_comp.write(seq_name + reverse_comp + "\n\n")
