@@ -6,6 +6,9 @@ import re
 class FASTAERROR(Exception):
 	pass
 
+class WrongNTERROR(Exception):
+	pass
+
 try:
 	suffixes = (".fa", ".fasta", ".nt")
 	if not sys.argv[1].endswith(suffixes):
@@ -35,6 +38,13 @@ with open(sys.argv[1], "r") as fo, open("Python_08.codons-6frames.nt", "w") as a
 			gene = genes_re.group(1)
 		else:
 			line_st = line.rstrip()
+			try:
+				for nt in line_st:
+					if nt not in "AGCTN\n":
+						raise WrongNTERROR("You can only have ACGT or N in your sequence")
+			except WrongNTERROR:
+				print("You can only have ACGT or N in your sequence")
+				exit()	
 			seq = seq + line_st
 			my_dict[gene] = seq
 	
